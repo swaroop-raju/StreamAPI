@@ -1,0 +1,67 @@
+package p1;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+ 
+
+public class StreamPracticeTest {
+
+ 
+
+	
+	static List<Customer> allCustomers;
+
+	static List<Address> allAddresses;
+
+	public static void main(String[] args) {
+
+		Address a1 = new Address("xxx-111","lamsingi","Ap");
+		Address a2 = new Address("yyy-222","chiktal","New Delhi");
+		Address a3 = new Address("zzz-333","sr.nagar","ts");
+		Address a4 = new Address("aaa-444","kundalhalli","banglore");
+		Address a5 = new Address("bbb-555","kakinada","Ap");
+
+		allAddresses =Arrays.asList(a1,a2,a3,a4,a5);
+
+
+		for (Address add : allAddresses) {
+			System.out.println(allAddresses);
+		}
+		System.out.println("------------------------------------------------------------------------------------");
+
+
+
+
+
+		System.out.println("--------------------------------------------------------------------------------");
+
+
+
+	 Customer c1 = new Customer("JOHN","aaa@gmail.com",a1,2000,"Online","pending");
+	 Customer c2 = new Customer("WICK","css@gmail.com",a2,3000,"cash","delivered");
+	 Customer c3 = new Customer("GIBBS","ddd@gmail.com",a3,4000,"Online","delivered");
+	 Customer c4 = new Customer("JACK","fff@gmail.com",a5,5000,"Online","pending");
+	 Customer c5 = new Customer("SPARROW","ggg@gmail.com",a2,6000,"cash","pending");
+	 Customer c6 = new Customer("DUBEY","hhh@gmail.com",a3,7000,"Online","delivered");
+	 Customer c7 = new Customer("YASH","jjj@gmail.com",a4,8000,"Online","delivered");
+	 Customer c8 = new Customer("RAZZ","yyy@gmail.com",a1,9000,"cash","pending");
+	 Customer c9= new Customer("RIO","ttt@gmail.com",a1,5000,"Online","pending");
+	 Customer c10 = new Customer("SENA","rrr@gmail.com",a1,6000,"Online","pending");
+
+	 allCustomers= Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10);
+for (Customer string : allCustomers) {
+	System.out.println(string);
+}
+	System.out.println(allCustomers);
+	}
+
+ 
+
+ 
+
+   
+
+
+}

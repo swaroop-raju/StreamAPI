@@ -1,0 +1,197 @@
+package p1;
+
+import java.util.Objects;
+
+
+
+public class Customer {
+
+	
+
+	private String username;
+
+	private String emailId;
+
+	private Address address;
+
+	private int orderValue;
+
+	private String paymentType;
+
+	private String status;
+
+	/**
+
+	 *
+
+	 */
+
+	public Customer() {
+
+		super();
+
+		// TODO Auto-generated constructor stub
+
+	}
+
+	/**
+
+	 * @param username
+
+	 * @param emailId
+
+	 * @param address
+
+	 * @param orderValue
+
+	 * @param paymentType
+
+	 * @param status
+
+	 */
+
+	public Customer(String username, String emailId, Address address, int orderValue, String paymentType,
+
+			String status) {
+
+		super();
+
+		this.username = username;
+
+		this.emailId = emailId;
+
+		this.address = address;
+
+		this.orderValue = orderValue;
+
+		this.paymentType = paymentType;
+
+		this.status = status;
+
+	}
+
+	public String getUsername() {
+
+		return username;
+
+	}
+
+	public void setUsername(String username) {
+
+		this.username = username;
+
+	}
+
+	public String getEmailId() {
+
+		return emailId;
+
+	}
+
+	public void setEmailId(String emailId) {
+
+		this.emailId = emailId;
+
+	}
+
+	public Address getAddress() {
+
+		return address;
+
+	}
+
+	public void setAddress(Address address) {
+
+		this.address = address;
+
+	}
+
+	public int getOrderValue() {
+
+		return orderValue;
+
+	}
+
+	public void setOrderValue(int orderValue) {
+
+		this.orderValue = orderValue;
+
+	}
+
+	public String getPaymentType() {
+
+		return paymentType;
+
+	}
+
+	public void setPaymentType(String paymentType) {
+
+		this.paymentType = paymentType;
+
+	}
+
+	public String getStatus() {
+
+		return status;
+
+	}
+
+	public void setStatus(String status) {
+
+		this.status = status;
+
+	}
+
+	@Override
+
+	public String toString() {
+
+		return "Customer [username=" + username + ", emailId=" + emailId + ", address=" + address + ", orderValue="
+
+				+ orderValue + ", paymentType=" + paymentType + ", status=" + status + "]";
+
+	}
+
+	@Override
+
+	public int hashCode() {
+
+		return Objects.hash(address, emailId, orderValue, paymentType, status, username);
+
+	}
+
+	@Override
+
+	public boolean equals(Object obj) {
+
+		if (this == obj)
+
+			return true;
+
+		if (obj == null)
+
+			return false;
+
+		if (getClass() != obj.getClass())
+
+			return false;
+
+		Customer other = (Customer) obj;
+
+		return Objects.equals(address, other.address) && Objects.equals(emailId, other.emailId)
+
+				&& orderValue == other.orderValue && Objects.equals(paymentType, other.paymentType)
+
+				&& Objects.equals(status, other.status) && Objects.equals(username, other.username);
+
+	}
+
+	
+
+	
+
+	
+
+ 
+
+}
